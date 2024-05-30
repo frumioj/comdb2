@@ -22,10 +22,10 @@ Encryption can only be enabled at database creation time. To modify encryption s
 
 To enable encryption at database creation time, add the following to the lrl file:
 
-crypto /path/to/password #where the path points to a password file that contains a minimum 14 character password.  
+  crypto /path/to/password #where the path points to a password file that contains a minimum 14 character password.  
 
 Then pass the lrl file to comdb2 --create, as follows:
 
-comdb2 --create --lrl /home/me/enc.lrl
+  comdb2 --create --lrl /home/me/enc.lrl
 
 There are no key management facilities at this point and it is up to the admin to properly secure the password file.
